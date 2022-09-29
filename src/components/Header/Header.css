@@ -1,0 +1,31 @@
+nav{
+    background-color: tomato;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+
+.brand-text{
+    color: rgb(84, 100, 245);
+    text-transform: uppercase;
+    font-size: 600;
+}
+
+.brand-name-part{
+    color: black;
+}
+
+.link-item{
+    display: flex;
+}
+.link-item li{
+    list-style: none;
+}
+.link-item a {
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    margin: 0 10px;
+    font-weight: 600;
+}
