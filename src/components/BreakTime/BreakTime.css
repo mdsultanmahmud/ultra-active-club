@@ -1,0 +1,21 @@
+
+.break-time-section{
+    margin: 20px 0;
+}
+.break-time{
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.break-time p{
+    width: 34px;
+    height: 34px;
+    border-radius: 50px;
+    background-color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}

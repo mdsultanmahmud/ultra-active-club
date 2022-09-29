@@ -3,57 +3,6 @@
     background-color: rgb(204, 203, 203);
 }
 
-.profile{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.profile img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 5px;
-}
-.profile-name{
-    font-size: 17px;
-}
-.profile p{
-    font-size: 14px;
-}
-.profile-details{
-    padding: 15px;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.profile-details h3{
-    font-size: 15px;
-}
-
-.break-time-section{
-    margin: 20px 0;
-}
-.break-time{
-    padding: 15px;
-    margin: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.break-time p{
-    width: 34px;
-    height: 34px;
-    border-radius: 50px;
-    background-color: white;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-}
 
 .exercise-section{
     margin: 20px 0;

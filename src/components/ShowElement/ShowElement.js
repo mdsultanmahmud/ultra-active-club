@@ -1,7 +1,7 @@
 import React from 'react';
 import './ShowElement.css'
 const ShowElement = (props) => {
-    const {name, age, picture,about, time} = props.element
+    const {name, age, picture,about, time, id} = props.element
     return (
         <div className='element'>
                 <img className='display-img' src={picture} alt="" />
