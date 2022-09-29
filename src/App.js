@@ -9,6 +9,7 @@ function App() {
         <Header></Header>
         <div className='product-part'>
           <Element></Element>
+          <AddedElement></AddedElement>
         </div>
     </div>
   );
