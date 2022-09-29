@@ -7,7 +7,9 @@ function App() {
   return (
     <div className='App.css'>
         <Header></Header>
-       
+        <div className='product-part'>
+          <Element></Element>
+        </div>
     </div>
   );
 }
