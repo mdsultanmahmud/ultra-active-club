@@ -2,11 +2,8 @@ import React from 'react';
 import BreakTime from '../BreakTime/BreakTime';
 import Profile from '../Profile/Profile';
 import './AddedElement.css'
-import { newTime } from '../../utilities/addtime';
 
-const AddedElement = () => {
-    // const exerciseTime = addTime(25)
-    // console.log(exerciseTime)
+const AddedElement = ({time}) => {
     return (
         <div className='added-element-part'>
             <Profile></Profile>      
@@ -15,7 +12,7 @@ const AddedElement = () => {
                 <h3>Exercise Details</h3>
                 <div className='time-count'>
                     <h4>Exersice Time</h4> 
-                    <p> {newTime} s</p>
+                    <p> {time}s</p>
                 </div>
                 <div className='time-count'>
                     <h4>Break Time</h4>

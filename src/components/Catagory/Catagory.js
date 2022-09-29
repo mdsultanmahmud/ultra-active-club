@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from 'react';
+import AddedElement from '../AddedElement/AddedElement';
 import ShowElement from '../ShowElement/ShowElement';
 import './Catagory.css'
 const Catagory = () => {
     const [elements, setElements] = useState([])
+    const [newTime, setNewTime] = useState(0)
     useEffect(() =>{
         fetch('data.json')
         .then(res => res.json())
         .then(data => setElements(data))
     },[])
+    const addToList = (time) =>{
+        let addedTime = newTime + time
+        setNewTime(addedTime)
+    }
     return (
         <div className='catagory'>
             <div className='catagory-container'>
@@ -15,11 +21,14 @@ const Catagory = () => {
                     elements.map(element => <ShowElement
                     key = {element.id}
                     element = {element}
+                    addToList = {addToList}
                     ></ShowElement>)
                 }
             </div>
             <div className='added-element-container'>
-                this is added product part
+                <AddedElement
+                    time = {newTime}
+                ></AddedElement>
             </div>
         </div>
     );
