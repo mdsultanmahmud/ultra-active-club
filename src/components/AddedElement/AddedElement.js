@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import BreakTime from '../BreakTime/BreakTime';
 import Profile from '../Profile/Profile';
 import './AddedElement.css'
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const AddedElement = (props) => {
     const {time, storedBreaktime} = props
 
@@ -11,6 +12,8 @@ const AddedElement = (props) => {
         localStorage.setItem('breakTime', breakTime)
         setBreakTime(breakTime)
     }
+
+    const notify = () => toast("Wow, your exercise is done!");
     return (
         <div className='added-element-part'>
             <Profile></Profile>
@@ -27,8 +30,12 @@ const AddedElement = (props) => {
                     <h4>Break Time</h4>
                     <p>{breakTime}s</p>
                 </div>
-                <button className='add-btn'>Activity Completed</button>
+                <button onClick={notify}  className='add-btn'>Activity Completed</button>
+                <ToastContainer />
             </section>
+            <div>
+        
+      </div>
         </div>
     );
 };
