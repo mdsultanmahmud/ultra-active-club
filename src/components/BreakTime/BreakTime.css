@@ -8,13 +8,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 .break-time p{
     width: 32px;
     height: 32px;
     border-radius: 50px;
-    background-color: white;
     display: grid;
+    background-color: white;
     align-items: center;
     justify-content: center;
     font-weight: 600;
