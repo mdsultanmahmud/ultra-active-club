@@ -3,6 +3,7 @@ import AddedElement from '../AddedElement/AddedElement';
 import ShowElement from '../ShowElement/ShowElement';
 import './Catagory.css'
 const Catagory = () => {
+    const storedBreaktime = localStorage.getItem('breakTime')
     const [elements, setElements] = useState([])
     const [newTime, setNewTime] = useState(0)
     useEffect(() =>{
@@ -28,6 +29,7 @@ const Catagory = () => {
             <div className='added-element-container'>
                 <AddedElement
                     time = {newTime}
+                    storedBreaktime = {storedBreaktime}
                 ></AddedElement>
             </div>
         </div>

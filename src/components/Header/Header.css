@@ -29,3 +29,9 @@ nav{
     margin: 0 10px;
     font-weight: 600;
 }
+
+@media screen and (max-width:668px) {
+    .link-item{
+        display: none;
+    }
+}
